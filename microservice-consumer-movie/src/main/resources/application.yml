@@ -1,0 +1,18 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: microservice-consumer-user
+
+
+user:
+  user-service-url: http://127.0.0.1:8004/  
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:root@127.0.0.1:8003/eureka
+  instance:
+    #将自己的IP注册到Eureka Server中
+    prefer-ip-address: true 

@@ -1,0 +1,10 @@
+server:
+  port: 8002
+
+user:
+  user-service-url: http://127.0.0.1:8001/  
+  
+devtools: 
+    restart: 
+      enabled: true
+      trigger-file: devtools.tg  

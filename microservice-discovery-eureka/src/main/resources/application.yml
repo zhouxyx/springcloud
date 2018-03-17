@@ -3,10 +3,12 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false  
-    fetch-registry: false
+    #register-with-eureka: false  
+    #fetch-registry: false
+    registerWithEureka: false
+    fetchRegistry: false
     service-url: 
-      defaultZone: http://127.0.0.1:8003/eureka
+      defaultZone: http://root:root@127.0.0.1:${server.port}/eureka/
       
 security:
   basic:
@@ -14,3 +16,7 @@ security:
   user:
     name: root
     password: root      
+    
+logging:
+  level:
+    root: ERROR    

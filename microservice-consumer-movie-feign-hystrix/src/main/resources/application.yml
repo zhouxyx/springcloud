@@ -1,13 +1,13 @@
 server:
-  port: 8005
+  port: 8007
 
 spring:
   application:
-    name: microservice-consumer-movie
+    name: microservice-consumer-movie-feign-hystrix
 
 
 user:
-  user-service-url: http://127.0.0.1:8004/  
+  user-service-url: http://microservice-provider-user/ 
   
 eureka:
   client:

@@ -8,7 +8,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.3.RELEASE</version>
 	</parent>
-	<artifactId>microservice-consumer-movie</artifactId>
+	<artifactId>microservice-consumer-movie-feign-hystrix</artifactId>
 	<name>microservice-consumer-movie</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -27,14 +27,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
 		</dependency>
 	</dependencies>
 

@@ -1,0 +1,25 @@
+server:
+  port: 8009
+
+spring:
+  application:
+    name: microservice-gateway-zuul
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:root@127.0.0.1:8003/eureka
+  instance:
+    #将自己的IP注册到Eureka Server中
+    prefer-ip-address: true
+    
+zuul:
+  
+  strip-prefix: false
+  routes:
+    user-route:
+      service-id: microservice-consumer-movie
+      path: /api/**
+      
+       

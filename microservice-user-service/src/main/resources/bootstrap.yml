@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: microservice-user-service
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+      username: user
+      password: 123456

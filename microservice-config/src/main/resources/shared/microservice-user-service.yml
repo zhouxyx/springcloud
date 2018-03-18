@@ -1,0 +1,3 @@
+server:
+  context-path: /usercenter
+  port: 6000

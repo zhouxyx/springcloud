@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.xxx.springcloud</groupId>
@@ -12,6 +13,7 @@
 
 	<modules>
 		<module>microservice-simple-provider-user</module>
+		<module>microservice-simple-provider-user-trace</module>
 		<module>microservice-simple-consumer-movie</module>
 		<module>microservice-discovery-eureka</module>
 		<module>microservice-provider-user</module>
@@ -21,7 +23,8 @@
 		<module>microservice-consumer-movie-feign-hystrix</module>
 		<module>microservice-hystrix-turbine</module>
 		<module>microservice-gateway-zuul</module>
-    <module>microservice-config</module>
-    <module>microservice-user-service</module>
-  </modules>
+		<module>microservice-config</module>
+		<module>microservice-user-service</module>
+		<module>microservice-trace-zipkin-server</module>
+	</modules>
 </project>
